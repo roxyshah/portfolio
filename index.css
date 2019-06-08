@@ -105,9 +105,10 @@
   }
 
   .nav-list {
-    flex: 1 0 100%;
+    /* flex: 1 0 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly; */
+    text-align: center;
   }
   
   .nav-link {
@@ -125,8 +126,10 @@
   }
   
   .nav-list li {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
+    display: inline-block;
+    padding: 30px 30px 0px 30px;
   }
   
   .nav-list li:not(:last-child) {
@@ -370,14 +373,17 @@
       border-bottom: 1px solid #8c99a3;
     }
     .nav-list {
-      flex: 1 0 100%;
+      /* flex: 1 0 100%;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-evenly; */
+      text-align: center;
     }
     
     .nav-list li {
-      flex: 1 0 auto;
-      align-self: flex-end;
+      /* flex: 1 0 auto;
+      align-self: flex-end; */
+      display: inline-block;
+      padding: 30px 30px 0px 30px;
     }
   
     .nav-link {
