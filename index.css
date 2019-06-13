@@ -493,7 +493,7 @@ h4 {
 
     .flex-col {
         flex-direction: row;
-        justify-content: space-between;
+        /* justify-content: space-between; */
     }
 
     .content-wrap {
