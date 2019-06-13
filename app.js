@@ -1,6 +1,6 @@
-function showDefine() {
+function showContactInfo() {
     $('.main-content .content-wrap').children().hide();
-    $('#define').fadeIn();
+    $('#contactinfo').fadeIn();
     $('.main-content').addClass("align-center");
     $('.main-content').removeClass("clear-padding");
     $('#projects-button').click(function() {
@@ -25,10 +25,10 @@ function showDefine() {
   
   // creates li for each nav item
   function createNav() {
-    var content = ["Roxanna Shahpouri", "Projects", "About"];
-    content.forEach(function(i) {
-      var liItem = $("<li><a id='" + content.indexOf(i) +
-        "' class='nav-link'>" + i + "</a></li>");
+    var content = ["About", "Projects", "Contact"];
+    content.forEach(function(item, i) {
+      var liItem = $("<li><a id='" + content.indexOf(item) +
+        "' class='nav-link'>" + item + "</a></li>");
       $('.nav-list').append(liItem);
       liItem.click(function() {
         navRouter(liItem);
@@ -38,9 +38,9 @@ function showDefine() {
   
   // animates and handles show/hide of content
   function navRouter(i) {
-    if (i.text() === "Roxanna Shahpouri") {
+    if (i.text() === "Contact") {
       navAnimation('#0');
-      showDefine();
+      showContactInfo();
     } else if (i.text() === "Projects") {
       navAnimation('#1');
       showProjects();
@@ -68,7 +68,8 @@ function showDefine() {
     document.querySelector('footer p').innerHTML = '&copy; Roxanna Shahpouri ' + year
     createNav();
     navAnimation('#0');
-    showDefine();
+    showAbout();
+    // showContactInfo();
     $('body').fadeIn().css({
       'display': 'block'
     });
