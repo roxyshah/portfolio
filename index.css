@@ -568,16 +568,16 @@ form {
         /* justify-content: space-between; */
     }
 
-    .content-wrap {
+    /* .content-wrap {
         margin-top: 100px;
-    }
+    } */
 
     #about {
         margin-left: 45px;
     }
 
-    .box-content {
-      max-width: 39%;
+    .box-content.align {
+      max-width: 40%;
     }
 
     .box-content-list {
@@ -606,6 +606,17 @@ form {
       display: inline;
     }
 
+    .image-block.align {
+      float: left;
+    }
+
+    .box-content.align p {
+      padding-top: 20px;
+    }
+
+    .image-block img {
+      height: 300px;
+    }
 }
 
 
