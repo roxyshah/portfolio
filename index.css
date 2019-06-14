@@ -34,7 +34,7 @@
   
   a {
     color: #01213b;
-    font-family: 'Quattrocento', serif;
+    font-family: proxima-nova;
   }
   
   a:hover {
@@ -239,7 +239,7 @@
     flex: 1 1 auto;
   }
   
-  .btn-dark {
+  /* .btn-dark {
     font-family: 'Lato', sans-serif;
     color: #ffffff;
     font-size: 1.2em;
@@ -249,18 +249,19 @@
     border: none;
     min-width: 134px;
     border: 2px solid #01213b;
-  }
+  } */
   
-  .btn-dark:hover {
+  /* .btn-dark:hover {
     cursor: pointer;
     background-color: #063B67;
     border: 2px solid #063B67;
-  }
+  } */
   
   .btn-light {
     font-family: 'Lato', sans-serif;
     color: #01213b;
     font-size: 1.2em;
+    font-weight: 400;
     background: #ffffff;
     padding: 5px 16px;
     text-decoration: none;
@@ -268,13 +269,36 @@
     min-width: 134px;
     margin-left: 10px;
     border: 2px solid #01213b;
+    border-radius: 5px;
   }
   
   .btn-light:hover {
     cursor: pointer;
     color: #ffffff;
-    background-color: #063B67;
-    border: 2px solid #063B67;
+    background-color: #ad662b;
+    border: 2px solid #ad662b;
+  }
+
+  .btnSubmit {
+    font-family: 'Lato', sans-serif;
+    color: #01213b;
+    font-size: 1.2em;
+    font-weight: 400;
+    background: #ffffff;
+    padding: 5px 16px;
+    text-decoration: none;
+    border: none;
+    min-width: 134px;
+    border: 2px solid #01213b;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  .btnSubmit:hover {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #ad662b;
+    border: 2px solid #ad662b;
   }
   
   .card {
@@ -428,7 +452,7 @@ fieldset {
     font-weight: 300;
     font-style: normal;
     line-height: 1.6em;
-    color:#454545; 
+    color:#01213b; 
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -456,7 +480,7 @@ h1 {
 }
 
 body h1 {
-    color: #222;
+    color: #01213b;
 }
 
 .box-content p {
@@ -470,6 +494,32 @@ h4 {
 #project-1 .card {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./images/background_quizApp.png);
     background-size: cover;
+}
+
+form {
+  color:#01213b; 
+  margin: 10px;
+}
+
+#contactinfo {
+  justify-content: space-between;
+}
+
+.contact-text {
+  margin: 15px;
+}
+
+.image-block {
+  display: block;
+  max-width: none;
+  width: 100%;
+  left: 0%;
+  top: -0.1%;
+}
+
+.contact-text h1 {
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 /* MEDIA QUERY BEGINS */
@@ -489,6 +539,8 @@ h4 {
         text-transform: uppercase;
         font-size: 14px;
         letter-spacing: .1em;
+        font-weight: 500;
+        line-height: 4em;
     }
 
     .flex-col {
