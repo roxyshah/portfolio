@@ -35,6 +35,16 @@ function showContactInfo() {
       });
     });
   }
+
+  // attaches click event for each mobileNav item
+  function attachMobileNavClick() {
+    const mobileNavLinks = $('.mobileNav .menu li');
+    mobileNavLinks.each(function(i, item) {
+      $(item).click(function() {
+        navRouter($(this));
+      })
+    })
+  }
   
   // animates and handles show/hide of content
   function navRouter(i) {
@@ -48,6 +58,7 @@ function showContactInfo() {
       navAnimation('#2');
       showAbout();
     }
+    toggleMenu();
   }
   
   function navAnimation(selection) {
@@ -62,15 +73,24 @@ function showContactInfo() {
       $('#0, #1').removeClass('nav-link-open');
     }
   }
-  
+
+/**
+ * function that will be called when the menu is clicked
+ * @param {*} event 
+ */
+  function toggleMenu(event) {
+    $('.mobileNav').toggle(100);
+  }
+
   $(function() {
-    var year = new Date().getFullYear()
-    document.querySelector('footer p').innerHTML = '&copy; Roxanna Shahpouri ' + year
+    var year = new Date().getFullYear();
+    document.querySelector('footer p').innerHTML = '&copy; Roxanna Shahpouri ' + year;
     createNav();
     navAnimation('#0');
     showAbout();
-    // showContactInfo();
     $('body').fadeIn().css({
       'display': 'block'
     });
+    $('.hamburger').on('click',toggleMenu);
+    attachMobileNavClick();
   });

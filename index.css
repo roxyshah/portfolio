@@ -41,10 +41,30 @@
     cursor: pointer;
   }
 
-  
-  header {
-    /* height: 75px; */
+  .mobileNav {
+    position: absolute;
+    top: 2.2em;
+    right: 2.2em;
+    display: none;
+    border: 2px solid #ad662b;
+    padding: 2px;
+    border-radius: 5px 0px 5px 5px;
+    text-align: center;
+    background-color: #fff;
   }
+
+  .mobileNav li {
+    padding: 0.7em 1em 0.7em 1em;
+  }
+
+  .mobileNav a:hover {
+    border-bottom: 1px solid #ad662b; 
+  }
+
+  
+  /* header {
+      height: 75px;
+  } */
   
   section {
     display: flex;
@@ -126,7 +146,6 @@
     transition: font-size 0.3s ease;
     line-height: 1.4em;
     font-size: 1.2em;
-    /* border-bottom: 3px solid #FDFFFC; */
   }
   
   .nav-link-open {
@@ -138,14 +157,8 @@
   }
   
   .nav-list li {
-    /* display: flex;
-    justify-content: center; */
     display: inline-block;
     padding: 20px 20px 0px 10px;
-  }
-  
-  .nav-list li:not(:last-child) {
-    /* margin-bottom: 10%; */
   }
   
   .nav-list a:hover {
@@ -242,24 +255,6 @@
     display: flex;
     flex: 1 1 auto;
   }
-  
-  /* .btn-dark {
-    font-family: 'Lato', sans-serif;
-    color: #ffffff;
-    font-size: 1.2em;
-    background: #01213b;
-    padding: 5px 16px;
-    text-decoration: none;
-    border: none;
-    min-width: 134px;
-    border: 2px solid #01213b;
-  } */
-  
-  /* .btn-dark:hover {
-    cursor: pointer;
-    background-color: #063B67;
-    border: 2px solid #063B67;
-  } */
   
   .btn-light {
     font-family: 'Lato', sans-serif;
@@ -542,18 +537,16 @@ form {
 
 }
 
+
 /* MEDIA QUERY BEGINS */
 
-/* tablet style */
+/* tablet and desktop style */
 @media screen and (min-width: 550px) {
     .nav {
         display: block;
     }
     
     .nav-list {
-        /* flex: 1 0 100%;
-        display: flex;
-        justify-content: space-evenly; */
         display: block;
         text-align: left;
         text-transform: uppercase;
@@ -563,14 +556,13 @@ form {
         line-height: 4em;
     }
 
-    .flex-col {
-        flex-direction: row;
-        /* justify-content: space-between; */
+    .mobileNav {
+      display: none !important;
     }
 
-    /* .content-wrap {
-        margin-top: 100px;
-    } */
+    .flex-col {
+        flex-direction: row;
+    }
 
     #about {
         margin-left: 45px;
@@ -612,6 +604,10 @@ form {
 
     .box-content.align p {
       padding-top: 20px;
+    }
+
+    .box-content p {
+      font-size: 1.2em;
     }
 
     .image-block img {
