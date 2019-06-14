@@ -48,15 +48,15 @@ function showContactInfo() {
   
   // animates and handles show/hide of content
   function navRouter(i) {
-    if (i.text() === "Contact") {
+    if (i.text() === "About") {
       navAnimation('#0');
-      showContactInfo();
+      showAbout();
     } else if (i.text() === "Projects") {
       navAnimation('#1');
       showProjects();
     } else {
       navAnimation('#2');
-      showAbout();
+      showContactInfo();
     }
     toggleMenu();
   }
