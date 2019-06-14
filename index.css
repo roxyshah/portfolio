@@ -502,7 +502,7 @@ form {
 }
 
 #contactinfo {
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .contact-text {
