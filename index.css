@@ -62,7 +62,7 @@
   footer p {
     font-size: 0.8em;
     align-self: center;
-    font-weight: 500;
+    font-weight: 400;
   }
   
   .hide {
@@ -149,6 +149,10 @@
   }
   
   .nav-list a:hover {
+    border-bottom: 1px solid #ad662b; 
+  }
+
+  .box-content-list ul a:hover {
     border-bottom: 1px solid #ad662b; 
   }
   
@@ -275,8 +279,9 @@
   .btn-light:hover {
     cursor: pointer;
     color: #ffffff;
-    background-color: #ad662b;
-    border: 2px solid #ad662b;
+    background-color: #063B67;
+    border: 2px solid #063B67;
+    font-weight: 500;
   }
 
   .btnSubmit {
@@ -302,10 +307,11 @@
   }
   
   .card {
-    margin: 1em 1em 4em 1em;
-    max-width: 800px;
+    margin: 4em 1em 4em 1em;
+    max-width: 550px;
     -webkit-box-orient: vertical;
     border: 1px solid #eee;
+    border-radius: 30px;
   }
   
   .img-container {
@@ -352,7 +358,7 @@
   
   
   .card-block {
-    padding: 2em;
+    padding: 2.3em;
   }
   
   .card-title {
@@ -402,7 +408,8 @@
     text-align: left;
     color: black;
     float: right;
-    margin-right: 10px;
+    margin-right: 15px;
+    font-size: 1.2em;
     }
 
 .navbar ul.menu {
@@ -467,7 +474,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .box-content-list {
     display: block;
-    margin-left: 10px;
+    margin-left: 15px;
+    margin-top: 60px;
+
 }
 
 .box-content {
@@ -512,14 +521,25 @@ form {
 .image-block {
   display: block;
   max-width: none;
-  width: 100%;
   left: 0%;
   top: -0.1%;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.image-block img {
+  height: 300px;
+  border-radius: 30px;
 }
 
 .contact-text h1 {
   margin: 0;
   margin-bottom: 15px;
+}
+
+#about .flex-col {
+
 }
 
 /* MEDIA QUERY BEGINS */
@@ -537,8 +557,8 @@ form {
         display: block;
         text-align: left;
         text-transform: uppercase;
-        font-size: 14px;
-        letter-spacing: .1em;
+        font-size: 11px;
+        letter-spacing: .2em;
         font-weight: 500;
         line-height: 4em;
     }
@@ -557,12 +577,13 @@ form {
     }
 
     .box-content {
-        max-width: 500px;
+      max-width: 39%;
     }
 
     .box-content-list {
         display: block;
-        margin: 0 85px 0 auto;
+        margin: 0 60px 0 auto;
+        float: right;
     }
 
     .hamburger {
@@ -571,6 +592,18 @@ form {
 
     .social {
         display: none;
+    }
+
+    .image-block {
+      text-align: left;
+    }
+
+    .align {
+      display: inline-block;
+    }
+
+    .about-wrap {
+      display: inline;
     }
 
 }
