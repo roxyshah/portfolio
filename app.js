@@ -6,7 +6,8 @@ function showContactInfo() {
     $('#projects-button').click(function() {
       navAnimation('#1');
       showProjects();
-    })
+    });
+    $('title').text("Contact — Roxanna Shahpouri");
   }
   
   function showProjects() {
@@ -14,6 +15,7 @@ function showContactInfo() {
     $('.projects-wrap').fadeIn();
     $('.main-content').addClass("clear-padding");
     $('.main-content').removeClass("align-center");
+    $('title').text("Projects — Roxanna Shahpouri");
   }
   
   function showAbout() {
@@ -21,6 +23,7 @@ function showContactInfo() {
     $('#about').fadeIn();
     $('.main-content').removeClass("clear-padding");
     $('.main-content').addClass("align-center");
+    $('title').text("About — Roxanna Shahpouri");
   }
   
   // creates li for each nav item
