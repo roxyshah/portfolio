@@ -20,8 +20,6 @@
 
 <body style="display:none">
   <div class="wrapper">
-    <!-- <header>
-    </header> -->
     <aside class="mobileNav">
       <ul class="menu">
           <li><a id="mobileNav0" class="nav-link">About</a></li>
@@ -31,67 +29,68 @@
     </aside>
 
     <div>
-      <div class="nav"> <!--<nav>-->
+      <nav class="nav">
         <div class="nav-wrap">
           <ul class="nav-list">
           </ul>
         </div>
-      </div>
+      </nav>
 
-    <nav class="navbar">
-            <div class="hamburger">&#9776;</div>
-        </nav>
+      <nav class="navbar">
+        <div class="hamburger">&#9776;</div>
+      </nav>
 
 
-      <div class="main-content"> <!--<section>-->
-        <div class="content-wrap"> <!--<artical>-->
+      <section class="main-content">
+        <article class="content-wrap">
           <div id="contactinfo" class="flex-col">
               <div class="contact-text">
                   <h1>Contact</h1>
                   <p>Feel free to contact me for inquiries, opportunities, or just to say hello!</p>
               </div>
 
-            <form autocomplete="on" method="POST" action="" onsubmit="">
+              <form autocomplete="on" method="POST" action="" onsubmit="">
                 <div class="field-list clear">
-                    <fieldset id="name1" class="form-item fields name required">
-                        <div class="title">Name <span class="required">*</span>
-                        </div>
+                  <fieldset id="name1" class="form-item fields name required">
+                    <div class="title">Name <span class="required">*</span>
+                      </div>
                       
+                    <div class="field first-name">
+                      <label class="caption">
+                        <input class="field-element field-control" name="fname" x-autocompletetype="given-name" type="text" spellcheck="false" maxlength="30">First Name
+                      </label>
+                    </div>
 
-                        <div class="field first-name">
-                            <label class="caption">
-                                <input class="field-element field-control" name="fname" x-autocompletetype="given-name" type="text" spellcheck="false" maxlength="30">First Name</label>
-                        </div>
-
-                        <div class="field last-name">
-                            <label class="caption">
-                                <input class="field-element field-control" name="lname" x-autocompletetype="surname" type="text" spellcheck="false" maxlength="30">Last Name</label>
-                        </div>
-                    </fieldset>
+                    <div class="field last-name">
+                      <label class="caption">
+                        <input class="field-element field-control" name="lname" x-autocompletetype="surname" type="text" spellcheck="false" maxlength="30">Last Name
+                      </label>
+                    </div>
+                  </fieldset>
                     
-                    <div id="email2" class="form-item field email required">
-                        <label class="title" for="email2-field">Email Address <span class="required">*</span></label>
-                        <input class="field-element" name="email" x-autocompletetype="email" type="text" spellcheck="false" id="email2-field">
-                    </div>
+                  <div id="email2" class="form-item field email required">
+                    <label class="title" for="email2-field">Email Address <span class="required">*</span></label>
+                      <input class="field-element" name="email" x-autocompletetype="email" type="text" spellcheck="false" id="email2-field">
+                  </div>
 
-                    <div id="text3" class="form-item field text required">
-                            <label class="title" for="text3-field">Subject <span class="required">*</span></label>
-                            <input class="field-element text" type="text" id="text3-field">
-                    </div>
+                  <div id="text3" class="form-item field text required">
+                    <label class="title" for="text3-field">Subject <span class="required">*</span></label>
+                    <input class="field-element text" type="text" id="text3-field">
+                  </div>
 
-                    <div id="textarea4" class="form-item field textarea required">
-                            <label class="title" for="textarea4-field">Message <span class="required">*</span></label>
-                            <textarea class="field-element" id="textarea4-field"></textarea>
-                    </div>
+                  <div id="textarea4" class="form-item field textarea required">
+                    <label class="title" for="textarea4-field">Message <span class="required">*</span></label>
+                    <textarea class="field-element" id="textarea4-field"></textarea>
+                  </div>
 
                 </div>
 
                 <div class="form-button">
-                    <input class="btnSubmit" type="submit" value="Submit">
+                  <input class="btnSubmit" type="submit" value="Submit">
                 </div>
             </form>
-
           </div>
+          
           <div id="about" class="">
 
             <div class="about-wrap">
@@ -165,9 +164,9 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
+        </article>
+      </section>
+   
 
     <footer>
       <p>&copy; Roxanna Shahpouri 2019</p>
