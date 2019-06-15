@@ -612,6 +612,10 @@ form {
       width: 55%;
       display: inline-block;
     }
+
+    #contactinfo {
+      margin-top: 70px;
+    }
 }
 
 
