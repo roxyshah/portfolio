@@ -61,11 +61,6 @@
     border-bottom: 1px solid #ad662b; 
   }
 
-  
-  /* header {
-      height: 75px;
-  } */
-  
   section {
     display: flex;
     height: calc(100vh - 150px);
@@ -572,7 +567,7 @@ form {
 
     .box-content-list {
         display: block;
-        margin: 55px 80px 0 0;
+        margin: 55px 100px 0 0;
         float: right;
         font-size: 20px;
     }
