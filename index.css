@@ -44,7 +44,7 @@
   .mobileNav {
     position: absolute;
     top: 2.8em;
-    right: 2.6em;
+    right: 2.8em;
     display: none;
     border: 2px solid #ad662b;
     padding: 2px;
@@ -76,6 +76,7 @@
     font-size: 0.8em;
     align-self: center;
     font-weight: 400;
+    padding-top: 60px;
   }
 
   .wrapper {
@@ -403,7 +404,7 @@
 
  .hamburger {
     text-align: left;
-    color: black;
+    color: #01213b;
     float: right;
     margin-right: 15px;
     font-size: 1.8em;
@@ -578,7 +579,7 @@ form {
 
     .box-content-list {
         display: block;
-        margin: 55px 100px 0 0;
+        margin: 55px 90px 0 0;
         float: right;
         font-size: 20px;
     }
@@ -612,7 +613,8 @@ form {
     }
 
     .box-content.align p {
-      padding-top: 20px;
+      padding-top: 5px;
+      padding-bottom: 60px;
     }
 
     .image-block img {
