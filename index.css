@@ -514,6 +514,11 @@ h4 {
   background-size: cover;
 }
 
+#project-3 .card {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./images/background_noteful.jpg);
+  background-size: cover;
+}
+
 form {
   color:#01213b; 
   margin: 10px;
